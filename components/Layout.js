@@ -1,8 +1,8 @@
 
 
 import Nav from "@/components/Nav";
-import { useSession, signIn,} from "next-auth/react"
-export default function Layout({children}) {
+import { useSession, signIn, } from "next-auth/react"
+export default function Layout({ children }) {
     const { data: session } = useSession()
     if (!session) {
         return (
